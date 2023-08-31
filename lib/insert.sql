@@ -19,3 +19,5 @@ INSERT INTO bears (id, name, age, sex, color, temperament, alive) VALUES
 (6,"Grinch", 2, 'M', "Black", "Grinchy", 1),
 (7,"Wendy", 6, 'F', "Blue", "naive", 1),
 (8,NULL, 19, 'M', "black", "aggressive", 0);
+
+
