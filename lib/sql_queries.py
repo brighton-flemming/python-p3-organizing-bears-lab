@@ -11,7 +11,7 @@ select_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest = ""
 """
 
 select_oldest_bear_and_returns_name_and_age = """
-    SELECT name, age FROM bears WHERE age = (SELECT MAX(age) FROM bears);
+    SELECT name, age FROM bears WHERE (name, age) = (SELECT MAX(age) FROM bears);
 """
 select_youngest_bear_and_returns_name_and_age = """
      SELECT name, age FROM bears WHERE (name, age) =  (SELECT name, MIN(age) FROM bears);
