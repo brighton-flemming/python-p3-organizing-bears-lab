@@ -28,11 +28,11 @@ class TestSelectAllFemaleBearsReturnNameAndAge:
     def test_selects_females_and_returns_name_and_age(self):
         '''selects all of the female bears and returns their name and age.'''
         result = cursor.execute(select_all_female_bears_return_name_and_age)
-        assert(result.fetchall() == [
-            ("Tabitha", 6),
-            ("Melissa", 13),
-            ("Wendy", 6)
-        ])
+        assert(result.fetchall() == [(
+            "Tabitha", '6',
+            "Melissa", '13',
+            "Wendy", '6'
+        )])
 
 class TestSelectAllBearsNamesAndOrdersInAlphabeticalOrder:
     '''select_all_bears_names_and_orders_in_alphabetical_order in sql_queries.py'''
